@@ -1,0 +1,50 @@
+Password Policy and Account Lockout Investigation
+Objective
+Configure password security requirements and investigate account lockout events within Active Directory.
+
+Environment
+Domain Controller
+Windows Server 2022
+Active Directory Domain Services
+DNS Server
+Client Workstation
+Windows 11
+Security Objectives
+Enforce password requirements
+Configure account lockout protections
+Generate authentication failures
+Investigate security events
+Analyze logs using PowerShell
+Actions Performed
+Password Policy
+Configured a minimum password length of 12 characters.
+
+Account Lockout Policy
+Configured account lockout after 5 failed login attempts.
+
+Authentication Testing
+Generated failed logins against a domain account to trigger account lockout protections.
+
+Security Investigation
+Reviewed Windows Security Event Logs to identify authentication failures.
+
+PowerShell Audit
+Queried Event ID 4625 events using PowerShell.
+
+Findings
+The configured account lockout policy successfully disabled access after multiple failed login attempts.
+
+Authentication failures generated Event ID 4625 entries within the Windows Security Log.
+
+PowerShell was able to retrieve and export authentication failure events for analysis.
+
+Skills Demonstrated
+Active Directory Administration
+Group Policy Management
+Security Monitoring
+Event Viewer Analysis
+PowerShell Administration
+Incident Investigation
+Windows Server Administration
+Lessons Learned
+Password policies and account lockout controls provide an important layer of protection against password guessing attacks. Windows Event Viewer and PowerShell can be used together to investigate authentication failures and security events.
